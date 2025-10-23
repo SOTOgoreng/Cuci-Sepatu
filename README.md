@@ -29,6 +29,7 @@ API ini mempermudah proses pencatatan dan pemantauan cucian sepatu secara digita
 | **DELETE** | `/api/orders/:id`            | Menghapus data pesanan.                 |
 ## Struktur Data
 1️⃣Categories
+
 Contoh Struktur data categories
 Menyimpan jenis sepatu yang dilayani.
 ```
@@ -44,7 +45,9 @@ Menyimpan jenis sepatu yang dilayani.
 | `id`         | `uuid`      | Primary key yang dibuat otomatis oleh Supabase.         |
 | `name`       | `varchar`   | Nama kategori sepatu (misal: Sneakers, Kulit, Slip On). |
 | `created_at` | `timestamp` | Waktu saat data kategori ditambahkan.                   |
+
 2️⃣service
+
 Digunakan untuk menyimpan informasi layanan cuci sepatu yang tersedia di toko, termasuk harga dan estimasi waktu pengerjaan.
 ```
 {
@@ -70,7 +73,9 @@ Digunakan untuk menyimpan informasi layanan cuci sepatu yang tersedia di toko, t
 | `status`            | `varchar`   | Status layanan (contoh: `available`, `unavailable`). |
 | `category_id`       | `uuid`      | Relasi ke tabel `categories` (kategori layanan).     |
 | `created_at`        | `timestamp` | Waktu layanan dibuat.                                |
+
 3️⃣washing_orders
+
 Menyimpan data pesanan pelanggan, termasuk siapa pelanggan, layanan apa yang dipilih, dan status pengerjaannya.
 ```
 {

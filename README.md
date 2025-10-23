@@ -36,7 +36,7 @@ Menyimpan jenis sepatu yang dilayani.
 {
   "id": "14ef2470-3949-468b-bf0a-54c803136f74",
   "name": "Sneakers",
-    "created_at": "2025-10-21T13:00:00.000Z"
+  "created_at": "2025-10-21T13:00:00.000Z"
 }'
 ```
 
